@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <title>tour booking</title>
+        <script src="booking.js"></script>
+    </head>
+    <body>
+        <h1>Book Now!</h1>
+        <h4>
+            <a href = "index.html"  style="text-align: left">back</a>
+        </h4>
+        <form id="booking-form" style="text-align:left;">
+            <p>this is a form for booking a tour</p>
+            <div class="form-group">
+                <p>Group Type</p>
+                <select id="group-type" name="group-type">
+                    <option value="small">Small Group (10–15 people)</option>
+                    <option value="standard">Standard Group (35–40 people)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>purchase your own airfare (Join Land)</p>
+                <input type="checkbox" id="join-land" name="join-land">Yes
+            </div>
+            <div class="form-group">
+                <p>Number of Travelers</p>
+                <input type="number" id="travelers" name="travelers" min="1" max="15" required>
+            </div>
+            <div class="form-group">
+                <p>Contact Name</p>
+                <input type="text" id="contact-name" name="contact-name" required>
+            </div>
+            <div class="form-group">
+                <p>Contact Tel</p>
+                <input type="tel" id="contact-phone" name="contact-tel" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+            <button type="submit" style="color: white; background-color: crimson;" id="submit-button">Submit</button>
+        </form>
+        <div style="text-align: center;" lang="th">รหัสนิสิต: 6733118821 | ชื่อ: นภัสร สุวรรณกิจ</div>
+    </body>
+</html>
