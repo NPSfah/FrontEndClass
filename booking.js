@@ -9,5 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.preventDefault();
             }
         }
+        alert("Your booking is successful!");
     });
 });
